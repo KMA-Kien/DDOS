@@ -22,9 +22,9 @@ Dự án đã triển khai thành công các kịch bản sau:
 ---
 
 ## 📚 Các bước tiến hành thực nghiệm
-1. [Chuẩn bị môi trường](docs/environment-preparation.md)
-2. [Tấn công](docs/attack.md)
-3. [Phòng thủ](docs/defense.md)
+1. [Chuẩn bị môi trường](Docs/environment-preparation.md)
+2. [Tấn công](Docs/attack.md)
+3. [Phòng thủ](Docs/defense.md)
 
 ---
 
