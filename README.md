@@ -19,5 +19,14 @@ Dự án đã triển khai thành công các kịch bản sau:
 * **Cấu hình IPtables:** Thiết lập giới hạn kết nối (Rate Limiting) để chặn các IP có dấu hiệu gửi gói tin ồ ạt.
 * **Cấu hình Snort IDS:** Tạo các Rule (Luật) để phát hiện lưu lượng ICMP Flood bất thường.
 
+---
+
+## 📚 Các bước tiến hành thực nghiệm
+1. [Chuẩn bị môi trường](docs/environment-preparation.md)
+2. [Tấn công](docs/attack.md)
+3. [Phòng thủ](docs/defense.md)
+
+---
+
 ## ⚠️ Tuyên bố từ chối trách nhiệm (Disclaimer)
 Dự án này được thực hiện hoàn toàn cho mục đích giáo dục, nghiên cứu an toàn thông tin tại Học Viện Kỹ Thuật Mật Mã. Các kịch bản mô phỏng được thực hiện trong môi trường Lab cục bộ. Tác giả không chịu trách nhiệm cho bất kỳ hành vi lạm dụng nào nhằm vào các hệ thống thực tế ngoài phạm vi nghiên cứu.
