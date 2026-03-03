@@ -4,7 +4,7 @@
 ## 📖 Tổng quan dự án (Overview)
 Dự án này là hệ thống hóa toàn bộ kiến thức về Tấn công Từ chối Dịch vụ Phân tán (DDoS) và triển khai các kịch bản thực nghiệm để tìm ra giải pháp phòng vệ tối ưu. Báo cáo đi sâu vào phân tích các kỹ thuật tấn công phổ biến như SYN Flood, ICMP Flood, UDP Flood, và HTTP POST/GET Attack. Thông qua môi trường mô phỏng, dự án đánh giá hiệu quả của các biện pháp phòng vệ đa tầng bao gồm IPtables Firewall và Snort IDS.
 
-![DDOS](Docs/images/1.jpg)
+![DDOS](Docs/images/2.png)
 
 ## 🛠️ Công cụ sử dụng (Tools & Technologies)
 * **Mô phỏng tấn công:** Hping3, Slowhttptest, Py-botnet.
