@@ -4,6 +4,10 @@ Trang này giúp bạn chuẩn bị các công cụ cơ bản **trước khi** t
 
 > **Mục tiêu:** Chuẩn bị hệ thống, dải mạng (IPs, ports).
 
+
+![DDOS](Docs/images/1.jpg)
+
+
 ---
 
 # Environment Preparation
