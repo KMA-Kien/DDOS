@@ -175,7 +175,7 @@ Từ file report có thể thấy:
 
 ### Github:  https://github.com/MayankFawkes/Python-Botnet
 
-### Phân tích code: 
+### Phân tích code: [Analysis](Docs/analysis.md)
 
 Bước 1: Khởi chạy server.
 Trên máy tấn công, khởi chạy server điều khiển botnet:
