@@ -43,7 +43,7 @@ def create_connection(self, connect:Tuple[str,int]) -> bool:
 ```
 
 + Khi có client kết nối thành công, server nhận được conn và lưu vào self.connections
-1.2.	 Phía client
+### 1.2.	 Phía client
 Chương trình sẽ liên tục gửi kết nối đến server trong vòng lặp liên tục
 
 ```
@@ -67,7 +67,7 @@ def _connect(self, connect:Tuple[str,int]) -> None:
 ```
 
 + Nếu kết nối thành công sẽ chuyển sang hàm start()
-2.	Server gửi lệnh cho các client
+## 2.	Server gửi lệnh cho các client
 -Sau khi server kết nối với client và nhận lệnh từ attacker, Server sẽ gửi lệnh đó đến các Client đang kết nối như 1 trung tâm điều phối:
 
 ```
@@ -109,8 +109,8 @@ def start(self) -> None:
 
 Sau khi xác định lệnh tương ứng, client sẽ gọi hàm tương ứng để xử lý DIRECT hoặc CONNECT
 
-3.	Một số lệnh Server sẽ gửi và cách Client thực hiện để phục vụ cho tấn công:
-3.1.	 Lệnh PING
+## 3.	Một số lệnh Server sẽ gửi và cách Client thực hiện để phục vụ cho tấn công:
+### 3.1.	 Lệnh PING
 -Server gửi:
 
 ```
@@ -128,7 +128,7 @@ def direct_ping(self, ack:str, params:str) -> None:
 ```
 
 + Server gửi PING đến tất cả bot, nếu Client nhận được sẽ phản hồi Pong để Server kiểm tra xem bot có hoạt động không
-3.2.	Lệnh ATTACK
+### 3.2.	Lệnh ATTACK
 -Server:
 
 ```
@@ -194,7 +194,7 @@ for _ in range(self.max_threads):
 + self.sock là socket UDP đã được tạo trước đó
 +sendto(data, address)  là hàm để gửi dữ liệu tới 1 địa chỉ
 +Mỗi luồng UDPFLOOD chạy nó sẽ tạo payload trong message() và chuyển sang bytes bằng endcode()
-3.3.	 Lệnh KILL
+### 3.3.	 Lệnh KILL
 -Phía Server:
 
 ```
@@ -221,7 +221,7 @@ def direct_kill(self, ack:str, params:str) -> None:
 ```
 
 + Ở phần trước, manager sẽ kiểm tra cờ run_until_local này trong mỗi lần chạy run(), thế nên nếu cờ là false thì các luồng flood sẽ kết thúc
-3.4.	 Lệnh KILLALL
+### 3.4.	 Lệnh KILLALL
 -Phía Server:
 
 ```
@@ -243,7 +243,7 @@ def direct_stop(self, ack:str, params:str) -> None:
 
 + self.tasks[hash]: Lấy thông tin task có mã hash  đó và ["manager"] lấy ra đối tượng UDPFloodManager của task
 + Cắm cờ cho đối tượng đó bằng  false: .run_until_local = False
-3.5.	 Server CONNECT đến 1 bot cụ thể
+### 3.5.	 Server CONNECT đến 1 bot cụ thể
 -Phía Server:
 
 ```
