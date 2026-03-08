@@ -197,4 +197,5 @@ Tương tự như ICMP Flood, các gói tin SYN liên từ nhiều địa chỉ 
 ![DDOS](images/defense/19.png)
 
 Có thể thấy, dù địa chỉ IP này đã bị phát hiện là tấn công từ trước nhưng khi ping thường từ địa chỉ IP này thì hệ thống cũng không phát hiện nhầm là tấn công, chứng tỏ phát hiện và phân biệt của hệ thống đạt độ chính xác cao.
+
 ---
