@@ -1,5 +1,12 @@
 # Triển khai tấn công DDOS
 
+---
+
+## 1.	Tấn công ICMP Flood.
+
+Bước 1: Kiểm tra kết nối giữa 2 máy.
+Trước khi tấn công, cần đảm bảo hai máy có thể giao tiếp với nhau. Sử dụng lệnh ping từ cả 2 máy tấn công và máy nạn nhân.
+
 ![DDOS](images/attack/1.png)
 ![DDOS](images/attack/2.png)
 ![DDOS](images/attack/3.png)
