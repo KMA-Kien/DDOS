@@ -166,9 +166,35 @@ Giải thích lệnh:
 
 ## 3.	Phân tích lưu lượng bằng Python để xác định nguồn tấn công.
 
-### Nguồn code : [Python](DDOS/Py-defense/Server.py)
+### Nguồn code : DDOS/Py-defense/Server.py
+
 ![DDOS](images/defense/15.png)
+
+Khởi động chương trình giám sát an ninh mạng Packet Sniffer.
+
+### Test 1: Ping thông thường.
+
+Kiểm tra lưu lượng ping thường xem có bị nhầm là kẻ tấn công không.
+
 ![DDOS](images/defense/16.png)
+
+Có thể thấy, với lưu lượng bình thường có tần suất thấp, không gây quá tải thì không bị hệ thống phát hiện nhầm là tấn công.
+
+### Test 2: Phát hiện tấn công ICMP Flood.
+
 ![DDOS](images/defense/17.png)
+
+Có thể thấy, với số lượng gói tin ICMP với tần suất cao từ cùng một nguồn hoặc nhiều nguồn giả mạo là dấu hiệu đặc trưng của tấn công ICMP Flood. Hệ thống đã phát hiện chính xác nguồn tấn công.
+
+### Test 3: Phát hiện tấn công SYN Flood:
+
 ![DDOS](images/defense/18.png)
+
+Tương tự như ICMP Flood, các gói tin SYN liên từ nhiều địa chỉ IP giả mạo do --rand-source gửi đến cổng 80 mà không có gói ACK hoàn tất kết nối là dấu hiệu của tấn công SYN Flood. Hệ thống cũng đã phát hiện chính xác nguồn tấn công.
+
+### Test 4: Ping lại từ máy attacker:
+
 ![DDOS](images/defense/19.png)
+
+Có thể thấy, dù địa chỉ IP này đã bị phát hiện là tấn công từ trước nhưng khi ping thường từ địa chỉ IP này thì hệ thống cũng không phát hiện nhầm là tấn công, chứng tỏ phát hiện và phân biệt của hệ thống đạt độ chính xác cao.
+---
