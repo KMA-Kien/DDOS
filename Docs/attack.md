@@ -171,7 +171,11 @@ Từ file report có thể thấy:
 -	Tham số tấn công: 1000 kết nối, phương thức POST, kích thước dữ liệu khai báo 8192 bytes, tốc độ 200 kết nối/giây.
 -	Kết quả: Số Connected và Closed tăng dần và duy trì ổn định, trong khi Service available giảm về 0.
 
-## 3.	Mô phỏng mạng botnet tấn công (Py-botnet). 
+## 3.	Mô phỏng mạng botnet tấn công (Py-botnet) by MayankFawkes. 
+
+### Github:  https://github.com/MayankFawkes/Python-Botnet
+
+### Phân tích code: 
 
 Bước 1: Khởi chạy server.
 Trên máy tấn công, khởi chạy server điều khiển botnet:
