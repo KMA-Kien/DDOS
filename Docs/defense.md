@@ -166,7 +166,7 @@ Giải thích lệnh:
 
 ## 3.	Phân tích lưu lượng bằng Python để xác định nguồn tấn công.
 
-### Nguồn code : [Python](Py-defense/Server.py)
+### Nguồn code : [Python](DDOS/Py-defense/Server.py)
 ![DDOS](images/defense/15.png)
 ![DDOS](images/defense/16.png)
 ![DDOS](images/defense/17.png)
